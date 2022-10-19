@@ -1,0 +1,94 @@
+[versions]
+####################### Libraries version
+slf4j = "2.0.0"
+logback = "1.2.11"
+junit = "5.9.0"
+jmh = "1.35"
+assertj = "3.23.1"
+awaitility = "4.2.0"
+easyrandom = "5.0.0"
+
+####################### Plugins version
+plugin-taskinfo = "1.4.0"
+plugin-goJF = "0.9"
+plugin-jmh = "0.6.6"
+plugin-jmhReport = "0.9.0"
+plugin-jcstress = "0.8.11"
+plugin-shadow = "7.1.2"
+
+
+####################### Bundles
+[bundles]
+junit = ["junit-jupiter-api", "junit-jupiter-engine", "junit-jupiter-params"]
+jmh = ["jmh-core", "jmh-generator-annprocess"]
+
+
+####################### Libraries
+
+[libraries.slf4j]
+module = "org.slf4j:slf4j-api"
+version.ref = "slf4j"
+
+[libraries.logback]
+module = "ch.qos.logback:logback-classic"
+version.ref = "logback"
+
+[libraries.junit-jupiter-api]
+module = "org.junit.jupiter:junit-jupiter-api"
+version.ref = "junit"
+
+[libraries.junit-jupiter-engine]
+module = "org.junit.jupiter:junit-jupiter-engine"
+version.ref = "junit"
+
+[libraries.junit-jupiter-params]
+module = "org.junit.jupiter:junit-jupiter-params"
+version.ref = "junit"
+
+[libraries.jmh-core]
+module = "org.openjdk.jmh:jmh-core"
+version.ref = "jmh"
+
+[libraries.jmh-generator-annprocess]
+module = "org.openjdk.jmh:jmh-generator-annprocess"
+version.ref = "jmh"
+
+[libraries.assertj]
+module = "org.assertj:assertj-core"
+version.ref = "assertj"
+
+[libraries.awaitility]
+module = "org.awaitility:awaitility"
+version.ref = "awaitility"
+
+[libraries.easyrandom-core]
+module = "org.jeasy:easy-random-core"
+version.ref = "easyrandom"
+
+
+####################### Plugins
+[plugins.taskinfo]
+id = "org.barfuin.gradle.taskinfo"
+version.ref = "plugin-taskinfo"
+
+[plugins.goJF]
+id = "com.github.sherter.google-java-format"
+version.ref = "plugin-goJF"
+
+[plugins.jmh]
+id = "me.champeau.jmh"
+version.ref = "plugin-jmh"
+
+[plugins.jmhReport]
+id = "io.morethan.jmhreport"
+version.ref = "plugin-jmhReport"
+
+[plugins.jcstress]
+id = "io.github.reyerizo.gradle.jcstress"
+version.ref = "plugin-jcstress"
+
+[plugins.shadow]
+id = "com.github.johnrengelman.shadow"
+version.ref = "plugin-shadow"
+
+[metadata]
