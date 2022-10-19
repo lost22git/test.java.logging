@@ -2,4 +2,4 @@
 
 ## [JPL](https://openjdk.org/jeps/264) & [JUL](https://docs.oracle.com/en/java/javase/19/docs/api/java.logging/java/util/logging/package-summary.html)
 
-![image](https://user-images.githubusercontent.com/65008815/196764751-ec2ac9fa-0ddf-462f-b632-0b05af3bda18.png)
+![image](https://user-images.githubusercontent.com/65008815/196765497-a6b6b60f-0f0b-4345-bc91-8cd1ed0cadb8.png)
