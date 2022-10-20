@@ -14,18 +14,18 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class JplTest {
 
-
-
     /**
      * # Without JUL module installed
      * <p>
-     * Default {@link System.Logger} impl is {@link jdk.internal.logger.SimpleConsoleLogger}
+     * Default {@link System.Logger} impl is
+     * {@link jdk.internal.logger.SimpleConsoleLogger}
      * <p>
      * Default writer is {@link System.err}
      * <p>
      * Default level is {@link System.Logger.Level.INFO}
      * <p>
      * Default formatter is
+     *
      * <pre>
      * String.format(format:String,
      *                          now:ZoneDateTime,
@@ -35,9 +35,11 @@ public class JplTest {
      *                          msg:String,
      *                          throwable:String);
      * </pre>
+     *
      * format value get from system property `jdk.system.logger.format`
      * <p>
-     * and the default value is `%1$tb %1$td, %1$tY %1$tl:%1$tM:%1$tS %1$Tp %2$s%n%4$s: %5$s%6$s%n`
+     * and the default value is `%1$tb %1$td, %1$tY %1$tl:%1$tM:%1$tS %1$Tp
+     * %2$s%n%4$s: %5$s%6$s%n`
      * <p>
      * <p>
      * # With JUL module installed
@@ -46,10 +48,11 @@ public class JplTest {
      * <p>
      * Default {@link System.Logger} impl is {@link LoggingProviderImpl.JULWrapper}
      * <p>
-     * Default {@link java.lang.System.LoggerFinder} impl is {@link sun.util.logging.LoggingProviderImpl}
+     * Default {@link java.lang.System.LoggerFinder} impl is
+     * {@link sun.util.logging.LoggingProviderImpl}
      */
     @Test
-    void testApi() {
+    void testLogApi() {
         var logger = System.getLogger("a.b.c");
         logger.log(DEBUG, "JPL DEBUG");
         logger.log(INFO, "JPL INFO");
@@ -70,7 +73,7 @@ public class JplTest {
         var logManager = LogManager.getLogManager();
         logManager.readConfiguration();
 
-        testApi();
+        testLogApi();
     }
 
     @Test
