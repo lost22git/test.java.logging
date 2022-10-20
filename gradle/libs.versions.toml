@@ -1,7 +1,7 @@
 [versions]
 ####################### Libraries version
-slf4j = "2.0.0"
-logback = "1.2.11"
+slf4j = "2.0.3"
+logback = "1.4.4"
 junit = "5.9.0"
 jmh = "1.35"
 assertj = "3.23.1"

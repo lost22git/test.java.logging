@@ -9,8 +9,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Java platform logging api
+ * <p>
  *
  * @see https://openjdk.org/jeps/264
+ *
  */
 public class JplTest {
 

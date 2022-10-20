@@ -13,6 +13,11 @@ import java.util.logging.Logger;
 import static java.util.logging.Level.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * # Features:
+ * <p>
+ * - lazy arguments ( avoid `if(logger.isXXXEnabled())` )
+ */
 public class JulTest {
 
     @Test
