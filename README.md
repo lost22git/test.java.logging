@@ -4,9 +4,11 @@
 
 ![image](https://user-images.githubusercontent.com/65008815/196765497-a6b6b60f-0f0b-4345-bc91-8cd1ed0cadb8.png)
 
+## [SLF4J](https://www.slf4j.org/manual.html)
+
 | Features       | JPL | JUL | SLF4J |
 | -------------- | --- | --- | ----- |
 | Base Api       | ✔️  | ✔️  | ✔️    |
 | Lazy Arguments | ✔️  | ✔️  | ✔️    |
-| Fluent Api     | ❌   | ❌   | ✔️    |
-| MDC            | ❌   | ❌   | ✔️    |
+| Fluent Api     | ❌  | ❌  | ✔️    |
+| MDC            | ❌  | ❌  | ✔️    |
