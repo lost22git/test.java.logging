@@ -2,6 +2,7 @@
 ####################### Libraries version
 slf4j = "2.0.3"
 logback = "1.4.4"
+logstash-logback-encoder = "7.2"
 junit = "5.9.0"
 jmh = "1.35"
 assertj = "3.23.1"
@@ -32,6 +33,10 @@ version.ref = "slf4j"
 [libraries.logback]
 module = "ch.qos.logback:logback-classic"
 version.ref = "logback"
+
+[libraries.logstash-logback-encoder]
+module = "net.logstash.logback:logstash-logback-encoder"
+version.ref = "logstash-logback-encoder"
 
 [libraries.junit-jupiter-api]
 module = "org.junit.jupiter:junit-jupiter-api"
